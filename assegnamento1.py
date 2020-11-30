@@ -59,6 +59,7 @@ def process(file_path, histo,stat):
 
     elapsed_time= time.time() - start_time
     logging.info("Done in %.3f s.",elapsed_time)
+
     if(histo==True):
         plt.bar(list(char_dict.keys()), char_dict.values(), color='blue')
         plt.title("Characters histogram")
